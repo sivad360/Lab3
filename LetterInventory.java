@@ -105,6 +105,65 @@ public class LetterInventory {
 
     }
 
+    public LetterInventory add (LetterInventory other) {
+
+        LetterInventory addedLetterInventories = new LetterInventory("");
+
+        int[] otherIntArray = new int[27];
+
+        for (int i = 0; i < 27; i ++) {
+
+            int currentLetterInt = i + 97;
+            
+            char currentLetter = (char)currentLetterInt;
+
+            //System.out.println(currentLetter);
+        
+            otherIntArray[i] = other.get(currentLetter);
+
+            addedLetterInventories.set(currentLetter, inventory[i]+otherIntArray[i]);
+
+        }
+
+        return addedLetterInventories;
+        
+    }
+
+    public LetterInventory subtract (LetterInventory other)  {
+
+    LetterInventory subtractedLetterInventories = new LetterInventory("");
+
+        int[] otherIntArray = new int[27];
+
+        for (int i = 0; i < 27; i ++) {
+
+            int currentLetterInt = i + 97;
+            
+            char currentLetter = (char)currentLetterInt;
+
+            otherIntArray[i] = other.get(currentLetter);
+
+            int currentLetterSubtractedInventory = inventory[i] - otherIntArray[i];
+
+            if ( currentLetterSubtractedInventory < 0 ) {
+
+                return null;
+
+            } else if (currentLetterSubtractedInventory >= 0) {
+
+             subtractedLetterInventories.set(currentLetter, currentLetterSubtractedInventory);
+
+            }
+        }
+
+        return subtractedLetterInventories;
+
+    }
+
+
+
+
+
 
 
 }
