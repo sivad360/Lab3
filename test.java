@@ -8,7 +8,7 @@ public class test {
     public static void main(String[] args) {
         LetterInventory LetterInventory1 = new LetterInventory("aaaaabbbb");
 
-        LetterInventory LetterInventory2 = new LetterInventory("aabbd");
+        LetterInventory LetterInventory2 = new LetterInventory("aabb");
 
         LetterInventory AddedInventories = LetterInventory1.add(LetterInventory2);
 
@@ -21,10 +21,9 @@ public class test {
         System.out.println("String representation of subtracted inventory");
         System.out.println(SubtractedInventories.toString());
 
-        System.out.println("Number of _'s");
+        System.out.println("Number of a's");
 
-        AddedInventories.set('d',7);
-        System.out.println(AddedInventories.toString());
+        AddedInventories.set('a',7);
 
         System.out.println(AddedInventories.get('d'));
 
