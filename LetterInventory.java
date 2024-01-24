@@ -1,3 +1,6 @@
+//Name: Davis Tyler
+//Class: CS 145
+//Date: 1/19/24
 
 import java.util.Arrays;
 
@@ -69,9 +72,16 @@ public class LetterInventory {
 
     }
 
-    public int size () { // not finished unsure how to make "fast"
+    public int size () { // not sure how to make this fast was suggested using lists but arrays
+        //make more sense in general for this lab
 
         int size = 0;
+
+        for (int i = 0; i < inventory.length; i++) {
+
+            size = size + inventory[i];
+
+        }
 
         return size;
 

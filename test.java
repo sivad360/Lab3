@@ -27,6 +27,8 @@ public class test {
 
         System.out.println(AddedInventories.get('d'));
 
+        System.out.println(AddedInventories.size());
+
         
 
         //System.out.println(LetterInventory2.get('b'));
