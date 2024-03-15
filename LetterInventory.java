@@ -1,6 +1,11 @@
 //Name: Davis Tyler
-//Class: CS 145
+//Class: CS145
 //Date: 1/19/24
+//Program: Letter Inventory
+//File: Letter Inventory
+//references: CS145 Lectures
+//purpose: This program creates inventories of letters with methods to
+//add subtract or modify the inventories
 
 import java.util.Arrays;
 
