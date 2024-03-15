@@ -4,7 +4,8 @@
 //Program: Letter Inventory
 //File: Test
 //references: CS145 Lectures
-//purpose: This program creates a inventories of letters 
+//purpose: This program creates inventories of letters with methods to
+//add subtract or modify the inventories
 
 public class test {
 
